@@ -2,7 +2,7 @@
 
 <?php
 
-use function Brain\Games\IfEven\evenCheck;
+use function Brain\Games\EvenCheck\evenCheck;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';

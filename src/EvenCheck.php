@@ -1,6 +1,6 @@
 <?php
 
-namespace Brain\Games\IfEven;
+namespace Brain\Games\EvenCheck;
 
 use function cli\line;
 use function cli\prompt;
