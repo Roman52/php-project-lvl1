@@ -1,5 +1,5 @@
 {
-  "name": "hexlet/code",
+  "name": "roman52/brain-games",
   "bin": [
     "bin/brain-games",
     "bin/brain-even"
@@ -8,13 +8,14 @@
   "authors": [
     {
       "name": "Roman Zharov",
-      "email": "zharov.dev@gmail.com"
+      "email": "rzharov.dev@gmail.com"
     }
   ],
-  "description": "hexlet php-package",
+  "description": "brain-games php-package",
   "license": "MIT",
   "autoload": {
     "files": [
+      "src/Functions.php",
       "src/Cli.php",
       "src/EvenCheck.php"
     ]
