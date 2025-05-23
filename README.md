@@ -26,6 +26,9 @@ make install
 make lint
 ```
 
+## Asciinema Brain-Even
+https://asciinema.org/a/FMmsEyKN43mErzKTPtp29gsNQ
+
 ## Test Coverage
 
 * See [codeclimate documentation](https://docs.codeclimate.com/docs/configuring-test-coverage)
