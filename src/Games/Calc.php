@@ -11,31 +11,25 @@ function calc(): void
 {
     $rounds = 3;
     $operations = ['-', '+', '*'];
-    $correctAnswer = 0;
 
     $userName = sayHello();
 
     line('What is the result of the expression?');
 
-    for ($i = 1; $i <= $rounds; $i += 1) {
+    for ($i = 0; $i < $rounds; $i++) {
         $operand1 = random_int(1, 10);
         $operand2 = random_int(1, 10);
-        $operation = random_int(0, 2);
+        $operation = $operations[array_rand($operations)];
 
-        line("Question: $operand1 $operations[$operation] $operand2");
+        line("Question: $operand1 $operation $operand2");
 
         $userAnswer = (int) prompt('Your answer');
 
-        switch ($operations[$operation]) {
-            case '-':
-                $correctAnswer = $operand1 - $operand2;
-                break;
-            case '+':
-                $correctAnswer = $operand1 + $operand2;
-                break;
-            case '*':
-                $correctAnswer = $operand1 * $operand2;
-        }
+        $correctAnswer = match ($operation) {
+            '-' => $operand1 - $operand2,
+            '+' => $operand1 + $operand2,
+            '*' => $operand1 * $operand2,
+        };
 
         if ($userAnswer !== $correctAnswer) {
             errorMessage($userAnswer, $userName, $correctAnswer);
