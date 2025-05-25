@@ -26,8 +26,11 @@ make install
 make lint
 ```
 
-## Asciinema Brain-Even
+## Asciinema brain-even
 https://asciinema.org/a/FMmsEyKN43mErzKTPtp29gsNQ
+
+## Asciinema brain-calc
+https://asciinema.org/a/pjRVDpNWs3g5rAtU7fcklaJi4
 
 ## Test Coverage
 

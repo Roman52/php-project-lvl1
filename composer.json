@@ -2,7 +2,8 @@
   "name": "roman52/brain-games",
   "bin": [
     "bin/brain-games",
-    "bin/brain-even"
+    "bin/brain-even",
+    "bin/brain-calc"
   ],
   "type": "library",
   "authors": [
@@ -15,9 +16,9 @@
   "license": "MIT",
   "autoload": {
     "files": [
-      "src/Functions.php",
-      "src/Cli.php",
-      "src/EvenCheck.php"
+      "src/Engine.php",
+      "src/Games/EvenCheck.php",
+      "src/Games/Calc.php"
     ]
   },
   "scripts": {

@@ -4,15 +4,14 @@ namespace Brain\Games\EvenCheck;
 
 use function cli\line;
 use function cli\prompt;
-use function Brain\Games\Functions\isEven;
-use function Brain\Games\Functions\errorMessage;
+use function Brain\Games\Engine\isEven;
+use function Brain\Games\Engine\errorMessage;
+use function Brain\Games\Engine\sayHello;
 
 function evenCheck(): void
 {
     $rounds = 3;
-    line('Welcome to the Brain Games!');
-    $userName = prompt('May I have your name?');
-    line("Hello, %s!", $userName);
+    $userName = sayHello();
     line('Answer "yes" if the number is even, otherwise answer "no".');
 
     for ($i = 1; $i <= $rounds; $i += 1) {

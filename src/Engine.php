@@ -1,8 +1,18 @@
 <?php
 
-namespace Brain\Games\Functions;
+namespace Brain\Games\Engine;
 
 use function cli\line;
+use function cli\prompt;
+
+function sayHello(): string
+{
+    line('Welcome to the Brain Game!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+
+    return $name;
+}
 
 function isEven(int $number): bool
 {
