@@ -27,11 +27,11 @@ make lint
 ```
 
 ## Asciinema brain-even
-<a href="https://asciinema.org/a/FMmsEyKN43mErzKTPtp29gsNQ" target="_blank">https://asciinema.org/a/FMmsEyKN43mErzKTPtp29gsNQ</a>
+[https://asciinema.org/a/FMmsEyKN43mErzKTPtp29gsNQ](https://asciinema.org/a/FMmsEyKN43mErzKTPtp29gsNQ){:target="_blank"}
 
 ## Asciinema brain-calc
 
-<a href="https://asciinema.org/a/pjRVDpNWs3g5rAtU7fcklaJi4" target="_blank">https://asciinema.org/a/pjRVDpNWs3g5rAtU7fcklaJi4</a>
+[https://asciinema.org/a/pjRVDpNWs3g5rAtU7fcklaJi4](https://asciinema.org/a/pjRVDpNWs3g5rAtU7fcklaJi4){:target="_blank"}
 
 ## Test Coverage
 
