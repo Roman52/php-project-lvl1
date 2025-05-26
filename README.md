@@ -32,6 +32,9 @@ https://asciinema.org/a/FMmsEyKN43mErzKTPtp29gsNQ
 ## Asciinema brain-calc
 https://asciinema.org/a/pjRVDpNWs3g5rAtU7fcklaJi4
 
+## Asciinema brain-gcd
+https://asciinema.org/a/6cS7zpmV56QThTmRp96mg7piV
+
 ## Test Coverage
 
 * See [codeclimate documentation](https://docs.codeclimate.com/docs/configuring-test-coverage)

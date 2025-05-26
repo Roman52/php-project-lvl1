@@ -4,7 +4,7 @@ namespace Brain\Games\Calc;
 
 use function cli\line;
 use function cli\prompt;
-use function Brain\Games\Engine\errorMessage;
+use function Brain\Games\Engine\showErrorMessage;
 use function Brain\Games\Engine\sayHello;
 
 function calc(): void
@@ -32,7 +32,7 @@ function calc(): void
         };
 
         if ($userAnswer !== $correctAnswer) {
-            errorMessage($userAnswer, $userName, $correctAnswer);
+            showErrorMessage($userAnswer, $userName, $correctAnswer);
             return;
         }
 
