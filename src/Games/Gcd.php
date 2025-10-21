@@ -4,8 +4,8 @@ namespace Brain\Games\Gcd;
 
 use function cli\line;
 use function cli\prompt;
-use function Brain\Games\Engine\showErrorMessage;
-use function Brain\Games\Engine\sayHello;
+use function Brain\Engine\showErrorMessage;
+use function Brain\Engine\sayHello;
 
 function calcGcd(): void
 {

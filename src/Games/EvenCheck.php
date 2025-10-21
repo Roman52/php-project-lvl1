@@ -4,10 +4,9 @@ namespace Brain\Games\EvenCheck;
 
 use function cli\line;
 use function cli\prompt;
-use function Brain\Games\Engine\isEven;
-use function Brain\Games\Engine\showErrorMessage;
-use function Brain\Games\Engine\sayHello;
-
+use function Brain\Engine\isEven;
+use function Brain\Engine\showErrorMessage;
+use function Brain\Engine\sayHello;
 function evenCheck(): void
 {
     $rounds = 3;
