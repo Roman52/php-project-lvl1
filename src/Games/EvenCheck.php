@@ -7,6 +7,7 @@ use function cli\prompt;
 use function Brain\Engine\isEven;
 use function Brain\Engine\showErrorMessage;
 use function Brain\Engine\sayHello;
+
 function evenCheck(): void
 {
     $rounds = 3;
