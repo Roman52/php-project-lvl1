@@ -22,7 +22,7 @@ function initProgression(): void
         $step = random_int(1, 10);
         $numbers = [];
 
-        for($j = 1; $j <= $progressionLength; $j++) {
+        for ($j = 1; $j <= $progressionLength; $j++) {
             $numbersStart += $step;
             $numbers[] = $numbersStart;
         }
