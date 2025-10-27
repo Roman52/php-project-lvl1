@@ -15,7 +15,6 @@ function initProgression(): void
     line('What number is missing in the progression?');
 
     for ($i = 0; $i < $rounds; $i++) {
-
         $progressionLength = random_int(5, 10);
         $numbersStart = random_int(1, 100);
         $hiddenPos = random_int(0, $progressionLength - 1);
