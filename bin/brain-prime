@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+
+<?php
+
+require_once 'src/init.php';
+
+use function Brain\Games\Prime\initPrime;
+
+initPrime();

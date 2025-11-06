@@ -19,5 +19,8 @@ brain-gcd:
 brain-progression:
 	php bin/brain-progression
 
+brain-prime:
+	php bin/brain-prime
+
 lint:
 	composer run-script phpcs -- --standard=PSR12 src bin
