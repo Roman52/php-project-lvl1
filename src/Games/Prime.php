@@ -9,7 +9,7 @@ use function Brain\Engine\sayHello;
 
 function initPrime(): void
 {
-    $randomNum = rand(1,100);
+    $randomNum = rand(1, 100);
     $userName = sayHello();
 
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
@@ -27,7 +27,8 @@ function initPrime(): void
     line("Congratulations, $userName!");
 }
 
-function isPrime($number) {
+function isPrime($number)
+{
     if ($number < 2) {
         return 'no';
     }
