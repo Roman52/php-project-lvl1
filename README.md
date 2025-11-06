@@ -11,8 +11,6 @@
 
 ## Setup
 
-Setup [SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) before clone:
-
 ```bash
 git git@github.com:Roman52/php-project-lvl1.git
 cd php-project-lvl1

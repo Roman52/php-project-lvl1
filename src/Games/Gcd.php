@@ -15,8 +15,8 @@ function calcGcd(): void
     line('Find the greatest common divisor of given numbers.');
 
     for ($i = 0; $i < $rounds; $i++) {
-        $num1 = random_int(1, 20);
-        $num2 = random_int(1, 20);
+        $num1 = random_int(1, 100);
+        $num2 = random_int(1, 100);
 
         line("Question: $num1 $num2");
 
