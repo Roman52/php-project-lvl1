@@ -8,7 +8,7 @@ use function Brain\Engine\isEven;
 use function Brain\Engine\showErrorMessage;
 use function Brain\Engine\sayHello;
 
-function evenCheck(): void
+function initEvenCheck(): void
 {
     $rounds = 3;
     $userName = sayHello();

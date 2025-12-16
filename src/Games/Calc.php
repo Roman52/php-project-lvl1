@@ -7,7 +7,7 @@ use function cli\prompt;
 use function Brain\Engine\showErrorMessage;
 use function Brain\Engine\sayHello;
 
-function calc(): void
+function initCalc(): void
 {
     $rounds = 3;
     $operations = ['-', '+', '*'];

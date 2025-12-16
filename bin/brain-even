@@ -4,6 +4,6 @@
 
 require_once __DIR__ . '/../src/init.php';
 
-use function Brain\Games\EvenCheck\evenCheck;
+use function Brain\Games\EvenCheck\initEvenCheck;
 
-evenCheck();
+initEvenCheck();

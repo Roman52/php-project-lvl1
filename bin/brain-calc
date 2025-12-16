@@ -4,6 +4,6 @@
 
 require_once __DIR__ . '/../src/init.php';
 
-use function Brain\Games\Calc\calc;
+use function Brain\Games\Calc\initCalc;
 
-calc();
+initCalc();

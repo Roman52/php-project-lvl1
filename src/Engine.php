@@ -24,3 +24,13 @@ function showErrorMessage(string $userAnswer, string $userName, string $correctA
     line("'$userAnswer' is wrong answer ;(. Correct answer was '$correctAnswer'.");
     line("Let's try again, $userName!");
 }
+
+function calcGcd($a, $b)
+{
+    while ($b != 0) {
+        $temp = $b;
+        $b = $a % $b;
+        $a = $temp;
+    }
+    return abs($a);
+}
