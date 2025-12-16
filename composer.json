@@ -1,5 +1,5 @@
 {
-  "name": "roman52/brain-games",
+  "name": "hexlet/code",
   "bin": [
     "bin/brain-games",
     "bin/brain-even",
