@@ -19,13 +19,13 @@ function isEven(int $number): bool
     return $number % 2 === 0;
 }
 
-function showErrorMessage(string $userAnswer, string $userName, string $correctAnswer): void
+function showErrorMessage(string|int $userAnswer, string $userName, string $correctAnswer): void
 {
     line("'$userAnswer' is wrong answer ;(. Correct answer was '$correctAnswer'.");
     line("Let's try again, $userName!");
 }
 
-function isPrime($number): bool
+function isPrime(int $number): bool
 {
     if ($number < 2) {
         return false;
@@ -40,9 +40,9 @@ function isPrime($number): bool
     return true;
 }
 
-function calcGcd($a, $b)
+function calcGcd(int $a, int $b): int
 {
-    while ($b != 0) {
+    while ($b !== 0) {
         $temp = $b;
         $b = $a % $b;
         $a = $temp;
