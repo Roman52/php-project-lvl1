@@ -25,6 +25,21 @@ function showErrorMessage(string $userAnswer, string $userName, string $correctA
     line("Let's try again, $userName!");
 }
 
+function isPrime($number): bool
+{
+    if ($number < 2) {
+        return false;
+    }
+
+    for ($i = 2; $i <= sqrt($number); $i++) {
+        if ($number % $i == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 function calcGcd($a, $b)
 {
     while ($b != 0) {

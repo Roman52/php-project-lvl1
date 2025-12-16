@@ -6,38 +6,30 @@ use function cli\line;
 use function cli\prompt;
 use function Brain\Engine\showErrorMessage;
 use function Brain\Engine\sayHello;
+use function Brain\Engine\isPrime;
 
 function initPrime(): void
 {
-    $randomNum = rand(1, 10);
+    $rounds = 3;
     $userName = sayHello();
 
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
-    line("Question: $randomNum");
 
-    $correctAnswer = (isPrime($randomNum)) ? 'yes' : 'no';
-    $userAnswer = prompt('Your answer');
+    for ($i = 0; $i < $rounds; $i++) {
+        $randomNum = rand(1, 10);
 
-    if ($userAnswer !== $correctAnswer) {
-        showErrorMessage($userAnswer, $userName, $correctAnswer);
-        return;
-    }
+        line("Question: $randomNum");
 
-    line('Correct!');
-    line("Congratulations, $userName!");
-}
+        $correctAnswer = (isPrime($randomNum)) ? 'yes' : 'no';
+        $userAnswer = prompt('Your answer');
 
-function isPrime($number): bool
-{
-    if ($number < 2) {
-        return false;
-    }
-
-    for ($i = 2; $i <= sqrt($number); $i++) {
-        if ($number % $i == 0) {
-            return false;
+        if ($userAnswer !== $correctAnswer) {
+            showErrorMessage($userAnswer, $userName, $correctAnswer);
+            return;
         }
+
+        line('Correct!');
     }
 
-    return true;
+    line("Congratulations, $userName!");
 }
