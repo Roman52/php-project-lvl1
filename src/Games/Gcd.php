@@ -22,7 +22,7 @@ function initGcd(): void
         line("Question: $num1 $num2");
 
         $userAnswer = (int) prompt('Your answer');
-        $correctAnswer = (int) calcGcd($num1, $num2);
+        $correctAnswer = calcGcd($num1, $num2);
 
         if ($userAnswer !== $correctAnswer) {
             showErrorMessage($userAnswer, $userName, $correctAnswer);

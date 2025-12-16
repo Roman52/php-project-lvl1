@@ -19,7 +19,7 @@ function isEven(int $number): bool
     return $number % 2 === 0;
 }
 
-function showErrorMessage(string|int $userAnswer, string $userName, string $correctAnswer): void
+function showErrorMessage(string|int $userAnswer, string $userName, string|int $correctAnswer): void
 {
     line("'$userAnswer' is wrong answer ;(. Correct answer was '$correctAnswer'.");
     line("Let's try again, $userName!");
@@ -32,7 +32,7 @@ function isPrime(int $number): bool
     }
 
     for ($i = 2; $i <= sqrt($number); $i++) {
-        if ($number % $i == 0) {
+        if ($number % $i === 0) {
             return false;
         }
     }
