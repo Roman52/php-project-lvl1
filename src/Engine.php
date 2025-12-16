@@ -7,7 +7,7 @@ use function cli\prompt;
 
 function sayHello(): string
 {
-    line('Welcome to the Brain Game!');
+    line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
 
@@ -21,6 +21,6 @@ function isEven(int $number): bool
 
 function showErrorMessage(string $userAnswer, string $userName, string $correctAnswer): void
 {
-    line("$userAnswer is wrong answer ;(. Correct answer was $correctAnswer.");
+    line("'$userAnswer' is wrong answer ;(. Correct answer was '$correctAnswer'.");
     line("Let's try again, $userName!");
 }
