@@ -1,3 +1,5 @@
+## Brain Games CLI Game
+
 ### Sonar cloud status:
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Roman52_php-project-lvl1&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Roman52_php-project-lvl1)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Roman52_php-project-lvl1&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Roman52_php-project-lvl1)
@@ -19,7 +21,7 @@
 
 ```bash
 git clone git@github.com:Roman52/php-project-lvl1.git
-cd php-project-lvl1
+cd Brain-Games
 
 # Install
 make install
